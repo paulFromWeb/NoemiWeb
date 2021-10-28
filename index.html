@@ -12,15 +12,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css"><!Ссылка для связи с CSS ВАЖНО>
-
+			<meta name="viewport" content="width=device-width">
 		<meta http-equiv="Content-type" content= " text/html;charset=utf-8"/>
 	</head>
 	<! Отображаемое тело страницы>
 	<body>
 		<div class="container">
 		<header class="header">
-			<div class="header__menu">HOME<i class="fas fa-caret-down"></i>      FEATURES<i class="fas fa-caret-down"></i>     <span>posttypes</span><i class="fas fa-caret-down"></i>      pages<i class="fas fa-caret-down"></i>      categories<i class="fas fa-caret-down"></i>     CONTACT</div>
-			<div class="header__icons icons">
+			<div class="header__menu"><span>HOME<i class="fas fa-caret-down"></i></span>    <span>FEATURES<i class="fas fa-caret-down"></i></span>    <span>posttypes<i class="fas fa-caret-down"></i></span>    <span>pages<i class="fas fa-caret-down"></i></span>    <span>categories<i class="fas fa-caret-down"></i></span>    <span>contact</span></div>
+			<div class="header__icons ">
 				<img src="1icon.png" alt="">
 				<img src="2icon.png" alt="">
 				<img src="3icon.png" alt="">
@@ -219,9 +219,12 @@
 															<img src="6icon.png" alt="">
 															<img src="2icon.png" alt="">
 														</div>
+														
+														
 													</div>
 													
 												</div>
+
 											</div>
 										</div>
 										<div class="art__columns">
@@ -376,12 +379,12 @@
 						<div class="rightpart__centre">
 						<div class="rightpart__categories">
 							<div>Categories</div>
-							<div>Beauty</div>
-							<div>Health</div>
-							<div>Lifestyle</div>
-							<div>Music</div>
-							<div>Sport</div>
-							<div>Yoga</div>
+							<div>Beauty <span>5</span></div>
+							<div>Health<span>4</span></div>
+							<div>Lifestyle<span>145</span></div>
+							<div>Music<span>28</span></div>
+							<div>Sport<span>62</span></div>
+							<div>Yoga<span>8</span></div>
 						</div>
 						<div class="rightpart__recent">
 							<div class="rightpart__row">
@@ -424,6 +427,7 @@
 							</div>
 							<div class="rightpart__search">
 								<input type="text" name="search" placeholder="Search...">
+								<button class="btn"><i class="fas fa-search"></i></button>
 							</div>
 						</div>
 						<div class="rightpart__banner">
@@ -482,7 +486,8 @@
 				<img src="4icon.png" alt="">
 			</div>
 			<div class="copyright">
-				<p class="copyright__ontop">on top</p>
+				
+				<a id="top" href="#" class="copyright__ontop">on top</a>
 				<p class="copyright__copyright">Copyright © 2009–2016 City Blog LLC.</p>
 			</div>
 		</footer>
