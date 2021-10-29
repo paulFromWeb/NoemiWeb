@@ -100,6 +100,70 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+@media (max-width: 1199.98px) {
+  body{
+    padding: 45px 50px 35px 50px;
+  }
+
+}
+@media (max-width: 991.98px) {
+    body{
+    padding: 45px 50px 35px 50px;
+  }
+  .noemi__column{
+    flex: 0 0 100%;
+  }
+
+}
+@media (max-width: 767.98px) {
+    body{
+    padding: 45px 50px 35px 100px;
+  }
+  .noemi__row{
+     flex-wrap: wrap;
+     border: 1px solid#000;
+     margin: 0 33.33%;
+  }
+  .item-about{
+  width: 100%;
+ margin: 0 0 30px 0;
+  }
+  .header__icons{
+   margin: 0 500px 0 0;
+     border: 1px solid#000;
+  }
+.rightpart{
+  display: none
+}
+.art{
+  display: flex;
+       flex-wrap: wrap;
+     border: 1px solid#000;
+padding: 0 10%;
+}
+.rightpart__cityimg{
+ margin: 0 20% 0 20%;
+ width: 100px;
+ height: 300px;
+      border: 1px solid#000;
+}
+.rightpart__cityimg img:nth-child(even){
+  display: none;
+}
+}
+@media (max-width: 575.98px) {
+    body{
+    padding: 45px 50px 35px 50px;
+  }
+  .noemi__column{
+    flex: 0 0 100%;
+  }
+  .noemi__row{
+    flex-wrap: wrap;
+    margin: 0 40%;
+         border: 1px solid#000;
+  }
+}
 
 body {
 width: 1660px;
@@ -132,11 +196,12 @@ position: relative;
     left: 0;
   }
 }
-.header__menu span{
+.header__menu span:hover{
   color: #b59f5b;
 }
 
 .header__icons {
+
 margin: 5px 0 0 800px;
   word-spacing: 26px;
   text-align: left;
@@ -339,6 +404,7 @@ font-weight: normal;
 color: #000000;
 text-align: center;
 margin: 28px 0 0 0;
+display: block;
 }
 .copyright__copyright{
 opacity: 0.54;
@@ -364,6 +430,14 @@ margin: 18px 0 0 0;
 
   margin: 0 110px 50px 212px;
     position: relative;
+}
+.square:after{
+  content: '';
+  position: absolute;
+  width: 435px;
+height: 3px;
+background-color: #eeeeee;
+right: 0;
 }
 .square__header {
 
@@ -456,6 +530,12 @@ width: 344px;
 height: 97px;
 
 }
+.square__text:nth-child(2){
+
+font-size: 32px;
+font-weight: 700;
+color: #000000;
+}
 .square__2 {
   opacity: 0.7;
 font-family: 'Open Sans';
@@ -519,27 +599,30 @@ color: #0f0d0e;
 }
 .rightpart {
 
+margin: -68px 0 0 0;
 }
 .rightpart__body {
 
     width: 278px;
   height: 2900px;
-  margin: -68px 0 0 0;
+ 
 
 }
 .rightpart__about {
-  margin: -68px 0 0 0;
+
   width: 277px;
   height: 1030px;
+
 }
 .rightpart__header {
-  margin: -68px 0 0 0;
+
   text-align: center;
   height: 452px;
+  
 }
 .rightpart__frame {
 position: absolute;
-  margin: -68px 0 0 0;
+  margin: -98px 0 0 0;
   width: 270px;
 height: 351px;
 opacity: 0.4;
@@ -548,7 +631,7 @@ border: 3px solid #b59f5b;
 z-index: 1;
 }
 .rightpart__girl{
-
+  margin: -28px 0 0 0;
 position: relative;
   z-index: 3;
   display: inline-block;
@@ -569,12 +652,12 @@ left: 0px;
 .rightpart__title {
   font-family: 'Josefin Sans';
 font-size: 14px;
-line-height: 29px;
+line-height: 14px;
 font-weight: 700;
 text-transform: uppercase;
 color: #0f0d0e;
 position: relative;
-margin: 15px 0 19px 0;
+margin: 15px 0 14px 0;
 animation-name: about;
 animation-duration: 0.5s;
 animation-timing-function: linear;
@@ -596,7 +679,7 @@ line-height: 24px;
 font-weight: 400;
 font-style: italic;
 color: #0f0d0e;
-margin: 0 0 24px 0;
+margin: 0 0 20px 0;
 
 }
 .rightpart__text p:nth-child(2){
@@ -611,7 +694,7 @@ color: #b59f5b;
   word-spacing: 26px;
 }
 .rightpart__middle {
-  margin: 37px 0 0 0;
+  margin: 0px 0 0 0;
 }
 .rightpart__icons:hover{
   transform: scale(1.2,1.2);
@@ -704,7 +787,7 @@ justify-content: space-around;
 }
 .rightpart__centre {
   position: relative;
-  margin: 31px 0 0 0;
+  margin: -10px 0 0 0;
 }
 .rightpart__categories div:after {
 content: '';
@@ -718,7 +801,7 @@ margin: 10px auto;
 .rightpart__categories div:nth-child(1){
   font-family: 'Josefin Sans';
 font-size: 14px;
-line-height: 29px;
+line-height: 14px;
 font-weight: 700;
 text-transform: uppercase;
 color: #0f0d0e;
@@ -733,6 +816,14 @@ background-color: #000;
 display: block;
 margin: 12px auto;
 
+}
+.rightpart__categories span{
+ font-family: Raleway;
+font-size: 12px;
+line-height: 28px;
+font-weight: 400;
+color: #b59f5b;
+margin: 0 0 0 7px;
 }
 .rightpart__categories{
   font-family: 'Open Sans';
@@ -755,7 +846,7 @@ margin: 0 0 36px 0;
 .rightpart__row div:nth-child(1){
   font-family: 'Josefin Sans';
 font-size: 14px;
-line-height: 29px;
+line-height: 14px;
 font-weight: 700;
 text-transform: uppercase;
 color: #0f0d0e;
@@ -772,9 +863,13 @@ display: block;
 }
 .rightpart__block{
   display: flex;
-  margin: 0 0 22px 0;
+  margin: 24px 0 22px 0;
   position: relative;
 
+}
+.rightpart__block img{
+  width: 70px;
+  height: 70px;
 }
 .rightpart__row div:nth-child(1){
   animation-name: block111;
@@ -836,22 +931,23 @@ color: #000000;
 }
 .rightpart__search input{
   padding: 17px 0 20px 18px ;
-  width: 271px;
+  width: 230px;
 height: 49px;
 background-color: #f4f7f6;
 display:inline-block;
-opacity: 0.54;
+opacity: 1;
 font-family: 'Open Sans';
 font-size: 13px;
 line-height: 40px;
 font-weight: 400;
 color: #000000;
 }
-.rightpart__search input:after{
-content: '';
+.btn{
+float: right;
 width: 48px;
 height: 48px;
 background-color: #b59f5b;
+color: white;
 }
 
 .rightpart__banner {
@@ -901,7 +997,7 @@ margin: 13px auto 23px auto;
   display: flex;
   flex-flow: column wrap;
   height: 3.5%;
-  margin: 0px 10px 10px 0;
+  margin: 0px 10px 0px 0;
 padding: auto 0;
 
 
@@ -955,7 +1051,7 @@ border: 3px solid #b49f60;
 .rightpart__cityblog{
  width: 1660px;
  height: 371px;
-
+margin: 40px 0 0 0;
 }
 .rightpart__cityblog p:nth-child(1){
   font-family: 'Josefin Sans';
@@ -976,9 +1072,11 @@ text-align: center;
 margin:   0 0 40px 0;
 }
 .rightpart__cityblog i{
-margin: 5px 0 0 0;
-
+margin: 5px 10px 0 0;
+display: inline-block;
 }
+
+
 .rightpart__cityimg{
 display: flex;
   width: 219px;
